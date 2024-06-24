@@ -7,12 +7,15 @@
 //
 
 #import "ALAppDelegate.h"
+#import <ALExtension/ALExtensionHeader.h>
 
 @implementation ALAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSLog(@"%@",[NSString paid]);
+//    print([NSString paid]);
     return YES;
 }
 

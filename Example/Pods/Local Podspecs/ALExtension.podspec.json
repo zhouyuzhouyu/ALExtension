@@ -1,0 +1,28 @@
+{
+  "name": "ALExtension",
+  "version": "0.2.0",
+  "summary": "A short description of ALExtension.",
+  "description": "ALExtension is a collection of some useful extensions for iOS development.",
+  "homepage": "https://github.com/745611/ALExtension",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "745611": "524112470@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/745611/ALExtension.git",
+    "tag": "0.2.0"
+  },
+  "platforms": {
+    "ios": "12.0"
+  },
+  "source_files": "ALExtension/Classes/**/*.{h,m}",
+  "public_header_files": "Pod/Classes/ALExtensionHeader.h",
+  "frameworks": [
+    "UIKit",
+    "Foundation",
+    "AVFoundation"
+  ]
+}

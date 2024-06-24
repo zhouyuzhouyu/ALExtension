@@ -39,8 +39,8 @@
 /* Begin PBXFileReference section */
 		037E2925BF1A669AD45A86A3 /* Pods-ALExtension_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALExtension_Example.release.xcconfig"; path = "Target Support Files/Pods-ALExtension_Example/Pods-ALExtension_Example.release.xcconfig"; sourceTree = "<group>"; };
 		0A8AF90F492FA5F78C4229F2 /* Pods-ALExtension_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALExtension_Example.debug.xcconfig"; path = "Target Support Files/Pods-ALExtension_Example/Pods-ALExtension_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		51CDCA3DD264F03E27A26E3B /* ALExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ALExtension.podspec; path = ../ALExtension.podspec; sourceTree = "<group>"; };
-		5355851748053BC598371EF8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		51CDCA3DD264F03E27A26E3B /* ALExtension.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ALExtension.podspec; path = ../ALExtension.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		5355851748053BC598371EF8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ALExtension_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ALExtension_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,7 +61,7 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8315DDB7EA2448C2C2E94C8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8315DDB7EA2448C2C2E94C8B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8BAB4BCCF2BA3D04507025D /* Pods-ALExtension_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ALExtension_Tests.release.xcconfig"; path = "Target Support Files/Pods-ALExtension_Tests/Pods-ALExtension_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AA8D44FEE045EE92378AACBE /* Pods_ALExtension_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ALExtension_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,7 +103,6 @@
 				F3467DC0CD5A757E3EB4B53C /* Pods-ALExtension_Tests.debug.xcconfig */,
 				A8BAB4BCCF2BA3D04507025D /* Pods-ALExtension_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -497,6 +497,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALExtension/ALExtension-Prefix.pch";
 				INFOPLIST_FILE = "ALExtension/ALExtension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +514,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ALExtension/ALExtension-Prefix.pch";
 				INFOPLIST_FILE = "ALExtension/ALExtension-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

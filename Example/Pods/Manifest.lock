@@ -1,0 +1,16 @@
+PODS:
+  - ALExtension (0.2.0)
+
+DEPENDENCIES:
+  - ALExtension (from `../`)
+
+EXTERNAL SOURCES:
+  ALExtension:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ALExtension: 55516db424547f10473b63c640ee1a979389b907
+
+PODFILE CHECKSUM: 63ce133bb4eb96654b83fc99c60d3bc65463a31a
+
+COCOAPODS: 1.15.2
