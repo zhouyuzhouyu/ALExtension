@@ -312,11 +312,11 @@
                          alpha:1.0f];
 }
 
-+ (UIColor *)colorWithRGBHex:(UInt32)hex {
++ (UIColor *)colorWithRGBHex:(NSUInteger)hex {
 	return [UIColor colorWithRGBHex:hex alpha:1.0f];
 }
 
-+ (UIColor *)colorWithRGBHex:(UInt32)hex alpha:(CGFloat)alpha{
++ (UIColor *)colorWithRGBHex:(NSUInteger)hex alpha:(CGFloat)alpha{
 	int r = (hex >> 16) & 0xFF;
 	int g = (hex >> 8) & 0xFF;
 	int b = (hex) & 0xFF;
