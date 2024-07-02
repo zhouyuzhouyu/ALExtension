@@ -50,9 +50,9 @@
 
     UIBarButtonItem *bbtn;
     
-    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
+    UIView *view=[[UIView alloc] init];
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
-    imageView.frame = rect;
+    view.frame = imageView.bounds;
     [view addSubview:imageView];
     
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
