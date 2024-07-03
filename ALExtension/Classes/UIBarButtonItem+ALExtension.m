@@ -79,4 +79,14 @@
     bbtn = [[UIBarButtonItem alloc] initWithCustomView:view];
     return bbtn;
 }
+
++ (UIBarButtonItem *)loadBackButtonWithTarget:(id)target action:(SEL)action {
+    return [[UIBarButtonItem alloc] initWithImage:[UIImage systemImageNamed:@"chevron.backward" withConfiguration:[UIImageSymbolConfiguration configurationWithWeight:UIImageSymbolWeightSemibold]] style:UIBarButtonItemStylePlain target:target action:action];
+}
+
++ (UIBarButtonItem *)loadCloseButtonWithTarget:(id)target action:(SEL)action {
+    return [[UIBarButtonItem alloc] initWithImage:[UIImage systemImageNamed:@"xmark" withConfiguration:[UIImageSymbolConfiguration configurationWithWeight:UIImageSymbolWeightSemibold]] style:UIBarButtonItemStylePlain target:target action:action];
+}
+
+
 @end

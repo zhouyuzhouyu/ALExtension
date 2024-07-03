@@ -22,21 +22,15 @@ ALExtension is a collection of some useful extensions for iOS development.
                        DESC
 
   s.homepage         = 'https://github.com/745611/ALExtension'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '745611' => '524112470@qq.com' }
   s.source           = { :git => 'https://github.com/745611/ALExtension.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'ALExtension/Classes/**/*.{h,m}'
-  
-  # s.resource_bundles = {
-  #   'ALExtension' => ['ALExtension/Assets/*.png']
-  # }
 
   s.public_header_files = 'Pod/Classes/ALExtensionHeader.h'
-  s.frameworks = 'UIKit', 'Foundation', 'AVFoundation'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'Foundation', 'AVFoundation', 'AssetsLibrary', 'QuartzCore'
+
 end

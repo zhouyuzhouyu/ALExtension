@@ -17,4 +17,9 @@
 + (UIBarButtonItem*)loadBarButtonItemWithImage:(NSString*)imageName rect:(CGRect)rect arget:(id)target action:(SEL)action;
 + (UIBarButtonItem*)loadRightBarButtonItemWithImage:(NSString*)imageName
                                                rect:(CGRect)rect target:(id)target action:(SEL)action;
+
+
++ (UIBarButtonItem *)loadBackButtonWithTarget:(id)target action:(SEL)action;
++ (UIBarButtonItem *)loadCloseButtonWithTarget:(id)target action:(SEL)action;
+
 @end
